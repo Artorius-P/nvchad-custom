@@ -26,6 +26,9 @@ M.ensure_installed = {
 
   -- rust
   "rust-analyzer",
+
+  -- C++
+  "clangd"
 }
 
 return M

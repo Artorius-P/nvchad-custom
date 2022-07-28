@@ -14,14 +14,6 @@ M.ui = {
    transparency = false,
 }
 
-M.options = {
-   user = function()
-      vim.opt.rnu = true
-      vim.opt.nu = true
-      vim.opt.clipboard:prepend {"unnamedplus"}
-   end,
-}
-
 M.plugins = {
   user = userPlugins,
 
