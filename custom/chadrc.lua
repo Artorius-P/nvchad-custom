@@ -27,7 +27,8 @@ M.plugins = {
 
   override = {
     ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
-    ["hrsh7th/nvim-cmp"] = require "custom.plugins.cmp",
+    ["williamboman/mason.nvim"] = require "custom.plugins.mason",
+    -- ["hrsh7th/nvim-cmp"] = require "custom.plugins.cmp",
   }
 
 }

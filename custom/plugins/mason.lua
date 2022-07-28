@@ -1,13 +1,6 @@
 local M = {}
 
-M.nvimtree = {
-  git = {
-    enable = true
-  },
-}
-
-M.mason = {
-  ensure_installed = {
+M.ensure_installed = {
   -- lua stuff
   "lua-language-server",
   "stylua",
@@ -26,8 +19,13 @@ M.mason = {
 
   -- python
   "flake8",
-  },
-}
+  "pyright",
 
+  -- solidity
+  "solidity",
+
+  -- rust
+  "rust-analyzer",
+}
 
 return M

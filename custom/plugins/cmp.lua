@@ -1,4 +1,5 @@
 local cmp = require "cmp"
+
 local M = {}
 
 M.mapping = {
