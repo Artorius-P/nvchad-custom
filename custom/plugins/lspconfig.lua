@@ -8,6 +8,7 @@ local servers = {
   "cssls",
   "jsonls",
   "denols",
+  "tsserver",
   "pyright",
   "rust_analyzer",
   "solc",
