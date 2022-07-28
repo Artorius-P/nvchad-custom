@@ -14,7 +14,7 @@ M.myconfig = {
     ["<leader>cc"] = {":Telescope <CR>", "   Telescope"},
     ["<leader>q"] = {":q <CR>", "   exit"},
     ["<F3>"] = {"<cmd> Neoformat <CR>", "   Neoformat"},
-    ["<leader>fm"] = {"<cmd> Neoformat <CR>", "   Neoformat"},
+    -- ["<leader>fm"] = {"<cmd> Neoformat <CR>", "   Neoformat"},
     ["<F8>"] = {
       function()
         vim.cmd [[set nu!]]

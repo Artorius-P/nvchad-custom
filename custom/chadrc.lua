@@ -9,9 +9,9 @@ local userPlugins = require "custom.plugins"
 -- example of changing theme:
 
 M.ui = {
-   theme = "onenord",
-   theme_toggle = {"onenord", "gruvchad"},
-   transparency = false,
+  theme = "onenord",
+  theme_toggle = { "onenord", "gruvchad" },
+  transparency = false,
 }
 
 M.plugins = {
@@ -21,8 +21,7 @@ M.plugins = {
     ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
     ["williamboman/mason.nvim"] = require "custom.plugins.mason",
     -- ["hrsh7th/nvim-cmp"] = require "custom.plugins.cmp",
-  }
-
+  },
 }
 
 M.mappings = require "custom.mappings"

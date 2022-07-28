@@ -7,4 +7,10 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+      after = "nvim-lspconfig",
+      config = function()
+         require "custom.plugins.null-ls"
+      end,
+  }
 }
