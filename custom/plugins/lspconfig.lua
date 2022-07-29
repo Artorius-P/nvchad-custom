@@ -13,7 +13,6 @@ local servers = {
   "pyright",
   "rust_analyzer",
   "solc",
-  "solidity_ls",
   "clangd",
   "yamlls",
   "dockerls",
