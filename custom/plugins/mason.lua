@@ -16,10 +16,12 @@ M.ensure_installed = {
   -- shell
   "shfmt",
   "shellcheck",
+  "bash-language-server",
 
   -- python
   "flake8",
   "pyright",
+  "black",
 
   -- solidity
   "solidity",
@@ -28,7 +30,17 @@ M.ensure_installed = {
   "rust-analyzer",
 
   -- C++
-  "clangd"
+  "clangd",
+  "clang-format",
+
+  -- yaml
+  "yaml-language-server",
+
+  -- docker
+  "dockerfile-language-server",
+
+  -- latex and md
+  "ltex-ls",
 }
 
 return M

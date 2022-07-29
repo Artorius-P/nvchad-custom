@@ -21,7 +21,10 @@ local sources = {
 
   -- python
   b.diagnostics.flake8,
-  b.formatting.yapf,
+  b.formatting.black,
+
+  -- C++, Java, JSON and so on
+  b.formatting.clang_format,
 
 }
 
