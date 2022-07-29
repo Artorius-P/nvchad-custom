@@ -2,32 +2,26 @@ local M = {}
 
 M.nvimtree = {
   git = {
-    enable = true
+    enable = true,
+  },
+  diagnostics = {
+    enable = true,
   },
 }
 
-M.mason = {
-  ensure_installed = {
-  -- lua stuff
-  "lua-language-server",
-  "stylua",
+M.cmp = function()
+  local cmp = require "cmp"
 
-  -- web dev
-  "css-lsp",
-  "html-lsp",
-  "typescript-language-server",
-  "deno",
-  "emmet-ls",
-  "json-lsp",
-
-  -- shell
-  "shfmt",
-  "shellcheck",
-
-  -- python
-  "flake8",
-  },
-}
-
+  return {
+    mapping = cmp.mapping.preset.insert {
+      ["<C-f>"] = cmp.mapping.confirm {
+        behavior = cmp.ConfirmBehavior.Replace,
+        select = true,
+      },
+      ["<C-s>"] = cmp.mapping.scroll_docs(-4),
+      ["<C-d>"] = cmp.mapping.scroll_docs(4),
+    },
+  }
+end
 
 return M
