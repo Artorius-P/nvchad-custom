@@ -2,28 +2,28 @@
 
 local M = {}
 
-local override = require("custom.plugins.override")
-local userPlugins = require("custom.plugins")
+local override = require "custom.plugins.override"
+local userPlugins = require "custom.plugins"
 
 -- make sure you maintain the structure of `core/default_config.lua` here,
 -- example of changing theme:
 
 M.ui = {
-	theme = "onenord",
-	theme_toggle = { "onenord", "gruvchad" },
-	transparency = false,
+  theme = "onenord",
+  theme_toggle = { "onenord", "gruvchad" },
+  transparency = false,
 }
 
 M.plugins = {
-	user = userPlugins,
+  user = userPlugins,
 
-	override = {
-		["kyazdani42/nvim-tree.lua"] = override.nvimtree,
-		["williamboman/mason.nvim"] = require("custom.plugins.mason"),
-		["hrsh7th/nvim-cmp"] = override.cmp,
-	},
+  override = {
+    ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
+    ["williamboman/mason.nvim"] = require "custom.plugins.mason",
+    ["hrsh7th/nvim-cmp"] = override.cmp,
+  },
 }
 
-M.mappings = require("custom.mappings")
+M.mappings = require "custom.mappings"
 
 return M

@@ -1,46 +1,49 @@
 local M = {}
 
 M.ensure_installed = {
-	-- lua stuff
-	"lua-language-server",
-	"stylua",
+  -- lua stuff
+  "lua-language-server",
+  "stylua",
 
-	-- web dev
-	"css-lsp",
-	"html-lsp",
-	"typescript-language-server",
-	"deno",
-	"emmet-ls",
-	"json-lsp",
+  -- web dev
+  "css-lsp",
+  "html-lsp",
+  "typescript-language-server",
+  "deno",
+  "emmet-ls",
+  "json-lsp",
 
-	-- shell
-	"shfmt",
-	"shellcheck",
-	"bash-language-server",
+  -- shell
+  "shfmt",
+  "shellcheck",
+  "bash-language-server",
 
-	-- python
-	"flake8",
-	"pyright",
-	"black",
+  -- python
+  "flake8",
+  "pyright",
+  "black",
 
-	-- solidity
-	"solidity",
+  -- solidity
+  "solidity",
 
-	-- rust
-	"rust-analyzer",
+  -- rust
+  "rust-analyzer",
 
-	-- C++
-	"clangd",
-	"clang-format",
+  -- C++
+  "clangd",
+  "clang-format",
 
-	-- yaml
-	"yaml-language-server",
+  -- yaml
+  "yaml-language-server",
 
-	-- docker
-	"dockerfile-language-server",
+  -- docker
+  "dockerfile-language-server",
 
-	-- latex and md
-	"ltex-ls",
+  -- latex and md
+  "ltex-ls",
+
+  -- go
+  "gopls",
 }
 
 return M
