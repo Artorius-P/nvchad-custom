@@ -21,6 +21,14 @@ M.cmp = function()
       ["<C-s>"] = cmp.mapping.scroll_docs(-4),
       ["<C-d>"] = cmp.mapping.scroll_docs(4),
     },
+    sources = {
+      { name = "luasnip" },
+      { name = "nvim_lsp" },
+      { name = "buffer" },
+      { name = "nvim_lua" },
+      { name = "path" },
+      { name = "treesitter" },
+    },
   }
 end
 
