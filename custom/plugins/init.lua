@@ -18,7 +18,8 @@ return {
   },
   ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
   ["williamboman/mason.nvim"] = require "custom.plugins.mason",
-  ["hrsh7th/nvim-cmp"] = override.cmp,
+  ["hrsh7th/nvim-cmp"] = override.nvimcmp,
+  ["nvim-treesitter/nvim-treesitter"] = require "custom.plugins.nvim-treesitter",
   -- ["goolord/alpha-nvim"] = {
   -- after = "base46",
   -- disable = false,
@@ -26,4 +27,4 @@ return {
   -- require "plugins.configs.alpha"
   -- end,
   -- },
-}
+  }
