@@ -2,7 +2,7 @@
 
 local M = {}
 
-local override = require "custom.plugins.override"
+-- local override = require "custom.plugins.override"
 local userPlugins = require "custom.plugins"
 
 -- make sure you maintain the structure of `core/default_config.lua` here,
@@ -14,15 +14,16 @@ M.ui = {
   transparency = false,
 }
 
-M.plugins = {
-  user = userPlugins,
-
-  override = {
-    ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
-    ["williamboman/mason.nvim"] = require "custom.plugins.mason",
-    ["hrsh7th/nvim-cmp"] = override.cmp,
-  },
-}
+M.plugins = userPlugins
+-- M.plugins = {
+  -- user = userPlugins,
+--
+  -- override = {
+    -- ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
+    -- ["williamboman/mason.nvim"] = require "custom.plugins.mason",
+    -- ["hrsh7th/nvim-cmp"] = override.cmp,
+  -- },
+-- }
 
 M.mappings = require "custom.mappings"
 

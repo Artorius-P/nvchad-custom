@@ -9,7 +9,8 @@ M.nvimtree = {
   },
 }
 
-M.cmp = function()
+M.cmp = {
+  override_options = function()
   local cmp = require "cmp"
 
   return {
@@ -30,6 +31,7 @@ M.cmp = function()
       { name = "treesitter" },
     },
   }
-end
+end,
+}
 
 return M
