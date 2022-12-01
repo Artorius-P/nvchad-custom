@@ -16,7 +16,6 @@ local copymode = function()
     print "Return to visual mode!"
   end
 end
-
 M.disable = {}
 
 M.myconfig = {
@@ -36,7 +35,18 @@ M.myconfig = {
 M.override = {
   n = {
     ["<leader>n"] = { copymode, "  change to copy mode" },
-  }
+    ["<leader>fm"] = {
+      function()
+        local api_level = vim.version()["api_level"]
+        if api_level < 10 then
+          vim.lsp.buf.formatting()
+        else
+          vim.lsp.buf.format()
+        end
+      end,
+      "lsp formatting",
+    },
+  },
 }
 
 M.nvimtree = {
