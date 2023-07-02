@@ -1,7 +1,7 @@
 local M = {}
 
 M.nvimtree = {
-  override_options = {
+  opts = {
     git = {
       enable = true,
     },
@@ -12,7 +12,7 @@ M.nvimtree = {
 }
 
 M.nvimcmp = {
-  override_options = function()
+  opts = function()
     local cmp = require "cmp"
 
     return {

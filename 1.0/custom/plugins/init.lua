@@ -16,7 +16,7 @@ return {
   ["ray-x/cmp-treesitter"] = {
     after = "cmp-path",
   },
-  ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
+  ["nvim-tree/nvim-tree.lua"] = override.nvimtree,
   ["williamboman/mason.nvim"] = {override_options=require "custom.plugins.mason"},
   ["hrsh7th/nvim-cmp"] = override.nvimcmp,
   ["nvim-treesitter/nvim-treesitter"] = require "custom.plugins.nvim-treesitter",
